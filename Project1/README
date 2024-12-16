@@ -1,0 +1,15 @@
+PROJECT 1
+
+Name: Luke Franks
+
+
+Instructions:
+
+To run the schedule do:
+
+% ./schedule 10000 two 1 : two 2 : two 3 : ls
+
+10000 is the quantum for each process
+two is a given program followed a # for its input
+
+Can also run system commands: ls, cat, echo
