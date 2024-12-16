@@ -1,0 +1,29 @@
+Luke Franks
+
+make nums
+./nums
+
+I really tried my best with this assignment as I spent countless hours
+on it. It took much longer than I thought it would.
+
+What works:
+
+	- RR Scheduler
+
+	- I BELIEVE lwp_create works. Ive debugged it and inspected everthing.
+	  The logic seems correct. When a thread is created, i store it into a
+	  a list of threads, where each thread is filled out with its specs
+	  and allocated stack using mmap as reccomended by Dr. Humer.
+
+	- I also belive lwp_start works.
+
+	- logic for most of the library functions are on the right track.
+	  I couldnt test past yeild bcause i cant figure it out.
+
+Identified Problems:
+	-I can't figure out why lwp_yield isn't working. It keeps segfaulting
+	 but im not sure why. The thread states are valid. I dont know. I spent 
+	 way too long trying to figure this out. Wish i started earlir
+
+	 PLEEASSE HAVE MERCY
+
