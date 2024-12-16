@@ -1,0 +1,20 @@
+(gdb) run
+Starting program: /home/ltfranks/csc453/lab0/fork_loop 
+[Detaching after fork from child process 14681]
+0[Detaching after fork from child process 14682]
+Yo!1[Detaching after fork from child process 14683]
+Yo!Yo!2[Detaching after fork from child process 14684]
+Yo!Yo!Yo!3[Detaching after fork from child process 14685]
+Yo!Yo!Yo!Yo!4[Detaching after fork from child process 14686]
+Yo!Yo!Yo!Yo!Yo!5Yo!Yo!Yo!Yo!Yo!5[Inferior 1 (process 14676) exited normally]
+
+
+USING WRITE
+luke@Lukes-MacBook-Air-87 Lab0 % ./who_runs_first | sort | uniq -c        
+ 996 childparent
+   4 parentchild
+
+USING printf and fflush
+luke@Lukes-MacBook-Air-87 Lab0 % ./who_runs_first | sort | uniq -c        
+ 991 childparent
+   9 parentchild
